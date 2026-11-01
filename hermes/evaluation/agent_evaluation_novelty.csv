@@ -1,0 +1,6 @@
+ticker,actual_movement,s_risk,s_accuracy,s_reasoning,s_overall,s_final,s_final_pct,verdict,predicted_action,rating,executive_summary,news_analyst_pct,technical_analyst_pct,risk_analyst_pct,manager_pct,overall_accuracy
+AAPL,UP 1.47% (from $310.03 to $314.58),9.0,9.2,9.0,9.0,9.06,90.6,APPROVED,BUY,Excellent,"High conviction bullish synthesis; drawdown strictly guarded with 10% position sizing.",90.0,92.0,90.0,90.0,90.6
+GOOGL,UP 2.14% (from $338.20 to $345.45),9.5,9.0,9.2,9.3,9.28,92.8,APPROVED,BUY,Excellent,"Outstanding Sharpe ratio (2.33) and cloud AI leadership confirm 15% approved allocation.",92.0,90.0,95.0,93.0,92.8
+NVDA,UP 3.85% (from $216.40 to $224.73),8.2,8.5,8.5,8.2,8.34,83.4,APPROVED,BUY,Good,"Strong fundamental AI demand validated; 10% position limit effectively manages chip volatility.",85.0,85.0,82.0,82.0,83.4
+MSFT,UP 5.06% (from $480.73 to $505.06),6.2,6.8,7.5,6.5,6.62,66.2,REDUCED,HOLD,Average,"Passed drawdown bounds but low Sharpe ratio (0.13) warrants reduced risk execution (5% size).",75.0,68.0,62.0,65.0,66.2
+META,DOWN 1.25% (from $565.10 to $558.04),2.0,8.0,7.0,3.5,4.78,47.8,REJECTED,HOLD,Poor,"Historical max drawdown (-42.26%) breached -30% bound; trade rejected for capital preservation.",70.0,80.0,20.0,35.0,47.8

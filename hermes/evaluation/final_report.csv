@@ -1,0 +1,2 @@
+evaluation_date,backtesting_approved_avg,backtesting_rejected_avg,spy_2y_return,hermes_portfolio_return,forward_7d_winrate,forward_14d_winrate,forward_30d_winrate,s_final_score,s_final_pct,s_risk_score,s_accuracy_score,s_reasoning_score,s_overall_score,novelty_formula
+2026-10-14,58.22666666666667,-8.700000000000001,35.77,77.64,60.0,60.0,60.0,7.62,76.2,6.98,8.3,8.24,7.3,S_final = (0.40 * S_risk) + (0.30 * S_accuracy) + (0.15 * S_reasoning) + (0.15 * S_overall)

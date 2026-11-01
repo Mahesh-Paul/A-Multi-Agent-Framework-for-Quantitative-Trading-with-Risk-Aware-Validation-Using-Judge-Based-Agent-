@@ -1,0 +1,275 @@
+ticker,signal
+AAPL,"
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Professional simulated trading analyst
+   - **Task:** Generate a trading signal based on provided backtest performance data for AAPL
+   - **Input Data:**
+     - Total Return: 20.27%
+     - Sharpe Ratio: 0.75
+     - Max Drawdown: -23.75%
+   - **Output Requirements:**
+     1. Signal: BUY, SELL, or HOLD
+     2. Confidence: 0-100
+     3. Reason: one sentence
+   - **Format Requirement:** Exact format specified.
+
+2.  **Evaluate Backtest Data:**
+   - *Total Return (20.27%):* Positive, decent annualized or period return depending on timeframe (not specified, but generally positive).
+   - *Sharpe Ratio (0.75):* Moderate. Indicates positive risk-adjusted returns, but not exceptional (>1 is good, >2 is excellent). Shows some volatility relative to returns.
+   - *Max Drawdown (-23.75%):* Significant. Indicates high downside risk and volatility. A drawdown of nearly 24% is substantial and suggests the strategy/asset experienced a major correction.
+   - *Synthesis:* The positive return is somewhat offset by the high drawdown and moderate risk-adjusted performance. In a trading context, a strategy/asset with a 20% return but a 24% max drawdown and a 0.75 Sharpe suggests it's not a strong momentum or low-risk buy right now. It might be better suited for a HOLD (if already positioned) or a cautious BUY with risk management, but given the high drawdown and moderate Sharpe, a HOLD or cautious BUY is reasonable. However, trading signals often lean BUY if returns are positive and Sharpe > 0, but the high drawdown warrants caution. I'll lean towards HOLD due to the significant drawdown and moderate risk-adjusted returns, suggesting consolidation or risk management is prudent. Alternatively, BUY could be justified if the drawdown is viewed as a buying opportunity, but the prompt asks for a signal based *on this data*. Let's go with HOLD, as the risk metrics temper the positive return. Actually, in simulated trading, a positive return with moderate Sharpe often still triggers a BUY, but the high drawdown makes it less confident. I'll assign a moderate confidence score (e.g., 65-70) and signal BUY with caution, or HOLD. Let's think like a quant/trader: Positive return + positive Sharpe = generally bullish/hold. Max drawdown of -23.75% is high, suggesting volatility. I'll go with HOLD to reflect the need to monitor risk, or BUY with moderate confidence. Actually, many institutional frameworks would say: Return > 0, Sharpe > 0.5 -> BUY/HOLD. Given the explicit request for a signal, I'll choose BUY but with moderate confidence due to the drawdown. Wait, let's reconsider: A 20% return with a 24% drawdown and 0.75 Sharpe is decent but not strong. I'll signal BUY with confidence 68, reason focusing on positive risk-adjusted returns outweighing the drawdown risk, or HOLD if emphasizing risk. I'll stick with BUY as the return is positive and Sharpe is acceptable, but I'll make the reason acknowledge the drawdown. Actually, HOLD might be safer given the high drawdown. Let's go with BUY, Confidence: 65, Reason: Positive total return and acceptable risk-adjusted performance support accumulation, though the significant max drawdown warrants strict risk management.
+   - Let's refine: Signal: BUY, Confidence: 68, Reason: The positive total return and moderate risk-adjusted performance justify accumulation, though the substantial max drawdown necessitates careful position sizing and risk controls.
+   - Check format: Exact format required.
+   - All constraints met.
+
+3.  **Final Output Generation:** (Mental verification of format)
+   Signal: BUY
+   Confidence: 68
+   Reason: The positive total return and moderate risk-adjusted performance justify accumulation, though the substantial max drawdown necessitates careful position sizing and risk controls.
+   Matches exactly. Proceeds. 
+   Self-Correction/Refinement during thought: 
+   Could it be HOLD? Given the high drawdown, HOLD is very reasonable. But trading signals often default to BUY if metrics are positive. I'll stick with BUY but keep confidence moderate. The reason covers the nuance. Format is strict. I will output exactly as requested.✅
+   Output matches.✅
+   Proceeds. 
+   [Output Generation] -> *Proceeds*
+   *(Note: I'll ensure the output strictly follows the requested format with no extra text.)*
+   Signal: BUY
+   Confidence: 68
+   Reason: The positive total return and acceptable risk-adjusted performance support a long position, though the significant max drawdown requires strict risk management and position sizing.
+   Matches perfectly.✅
+   Output matches response.✅
+   [Done]
+</think>
+
+Signal: BUY
+Confidence: 68
+Reason: The positive total return and acceptable risk-adjusted performance support a long position, though the significant max drawdown requires strict risk management and position sizing."
+MSFT,"
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Professional simulated trading analyst
+   - **Task:** Analyze provided data for MSFT and generate a trading signal
+   - **Input Data:**
+     - Backtest Performance: Total Return: 1.03%, Sharpe Ratio: 0.13, Max Drawdown: -15.24%
+     - (Implicitly, the previous prompt's news sentiment was BULLISH with 85 confidence, but the current prompt focuses on the backtest performance data provided)
+   - **Output Requirements:**
+     1. Signal: BUY, SELL, or HOLD
+     2. Confidence: 0-100
+     3. Reason: one sentence
+     - Exact format required:
+       Signal: <BUY/SELL/HOLD>
+       Confidence: <0-100>
+       Reason: <one sentence>
+
+2.  **Evaluate Data:**
+   - *Total Return:* 1.03% (Low/Positive but minimal over the backtest period)
+   - *Sharpe Ratio:* 0.13 (Very low, indicates poor risk-adjusted returns; typically < 0.5 is considered poor)
+   - *Max Drawdown:* -15.24% (Moderate to high risk relative to the tiny return)
+   - *Interpretation:* The backtest shows positive but negligible returns with very poor risk-adjusted performance and a significant drawdown. This suggests the strategy/asset is currently underperforming relative to risk taken. A professional analyst would likely recommend HOLD or SELL depending on context, but given the poor risk/reward, HOLD is prudent to avoid locking in losses, or SELL if reallocating. However, trading signals based on weak backtests usually lean towards HOLD (wait for better risk/reward) or SELL (cut losses/reallocate). Given the low Sharpe and high drawdown relative to return, a HOLD or SELL is appropriate. I'll lean towards HOLD with cautious confidence, or SELL if emphasizing risk management. Actually, a Sharpe of 0.13 is essentially break-even with high risk. A professional would likely say HOLD to reassess or SELL to cut exposure. I'll go with HOLD, as it's a major cap stock and the return is slightly positive, but the risk metrics are poor. Wait, the prompt says ""Based on this data provide..."". The data is purely quantitative backtest stats. Low return, low Sharpe, high drawdown = poor strategy performance. Signal: HOLD (or SELL). I'll choose HOLD with moderate-low confidence, or SELL with higher confidence. Actually, in quant trading, a Sharpe < 0.5 often triggers a SELL/FLAT signal. I'll go with SELL or HOLD. Let's stick to HOLD as it's a defensive stance given the weak metrics, but I'll frame the reason around the poor risk-adjusted returns and high drawdown relative to gains. Alternatively, SELL is more decisive for a systematic trader. I'll go with HOLD to avoid cutting slightly positive returns prematurely, but emphasize the need for risk adjustment. Actually, professional quant signals on such metrics usually output HOLD or SELL. I'll output HOLD.
+   - Let's calculate confidence: The data is clear (weak performance), so confidence in the *assessment* is high, but confidence in the *signal* might be moderate. I'll set Confidence: 70.
+   - Reason: The strategy's positive but minimal returns are severely outweighed by a low Sharpe ratio and substantial drawdown, indicating poor risk-adjusted performance that warrants maintaining current exposure while awaiting improved metrics.
+   - Check format: Exact.
+   - Refine Reason to be tighter: The negligible returns relative to a low Sharpe ratio and significant drawdown indicate poor risk-adjusted performance, warranting a cautious stance until risk metrics improve.
+   - Signal: HOLD
+   - Confidence: 75
+   - Reason: The negligible returns relative to a low Sharpe ratio and significant drawdown indicate poor risk-adjusted performance, warranting a cautious stance until risk metrics improve.
+
+   Wait, let's reconsider standard quant thresholds. Sharpe 0.13 is very bad. Max DD -15% for 1% return is terrible. A systematic trader would likely SELL/FLAT. I'll go with SELL to be more decisive, or HOLD. I'll stick with HOLD as it's safer for a general signal, but SELL is also valid. I'll go with HOLD. Actually, the prompt says ""Based on this data provide..."". I'll output HOLD.
+   Let's align with professional trading analysis: Weak risk/reward -> HOLD/SIDEWALK. I'll use HOLD.
+   Confidence: 75
+   Reason: The strategy's minimal returns are severely outweighed by a poor Sharpe ratio and substantial drawdown, indicating unfavorable risk-adjusted performance that justifies maintaining current positions rather than adding exposure.
+   Format check:
+   Signal: HOLD
+   Confidence: 75
+   Reason: The strategy's minimal returns are severely outweighed by a poor Sharpe ratio and substantial drawdown, indicating unfavorable risk-adjusted performance that justifies maintaining current positions rather than adding exposure.
+   Matches exactly. Proceeds. 
+   One minor adjustment: I'll make sure the reason is strictly one sentence and directly addresses the metrics. All good.✅
+   Output matches response. 
+   [Output Generation] -> *Proceeds*
+   *(Self-Correction/Verification during thought)*: 
+   Could it be SELL? In quant backtesting, a Sharpe of 0.13 with -15% DD is a clear signal to reduce exposure or exit. I'll change to SELL to be more decisive, as professional traders cut weak performers. Actually, HOLD is fine. I'll stick with HOLD. The prompt doesn't specify strategy type. I'll keep HOLD. Confidence 70. Reason matches. All constraints met.
+   Final check of the prompt: ""Respond in this exact format:\nSignal: <BUY/SELL/HOLD>\nConfidence: <0-100>\nReason: <one sentence>""
+   Ready.✅
+   Output Generation. 
+   [Output]
+   Signal: HOLD
+   Confidence: 70
+   Reason: The strategy's minimal returns are severely outweighed by a poor Sharpe ratio and substantial drawdown, indicating unfavorable risk-adjusted performance that justifies maintaining current positions rather than adding exposure. 
+   *(Note: I will ensure strict adherence to the requested format with no extra text.)*✅
+   All good. 
+   [Proceeds] 
+   *(Self-Correction/Note during generation prep)*: I'll adjust confidence to 75 and keep reason tight. The output is ready.✅
+   [Output Generation] -> *Proceeds*
+</think>
+
+Signal: HOLD
+Confidence: 75
+Reason: The strategy's minimal returns are severely outweighed by a low Sharpe ratio and substantial drawdown, indicating poor risk-adjusted performance that justifies maintaining current exposure while awaiting improved risk metrics."
+GOOGL,"
+<think>
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Role:** Professional simulated trading analyst.
+    *   **Task:** Analyze data for GOOGL and generate a trading signal.
+    *   **Previous Context:** The user provided news sentiment analysis (Bullish, 88 confidence, Dow inclusion/Cloud partnerships reason).
+    *   **New Data:** Backtest Performance metrics:
+        *   Total Return: 105.05%
+        *   Sharpe Ratio: 2.33
+        *   Max Drawdown: -12.29%
+    *   **Output Requirements:**
+        1.  Signal: BUY, SELL, or HOLD
+        2.  Confidence: 0-100
+        3.  Reason: one sentence
+    *   **Format Constraint:** Respond in this exact format:
+        Signal: <BUY/SELL/HOLD>
+        Confidence: <0-100>
+        Reason: <one sentence>
+
+2.  **Evaluate the Data:**
+    *   *Total Return (105.05%):* Exceptional performance, indicating strong upside potential or historical strength.
+    *   *Sharpe Ratio (2.33):* Excellent risk-adjusted return (anything above 1 is good, above 2 is very good). This suggests the returns are not coming from excessive risk-taking.
+    *   *Max Drawdown (-12.29%):* Relatively low risk/volatility for the amount of return generated. This is a very healthy drawdown profile.
+    *   *Combined with Previous Sentiment:* The news was Bullish (Dow inclusion, AI/Cloud growth, analyst buys). The backtest confirms strong historical performance with low risk metrics.
+    *   *Conclusion:* The combination of bullish fundamentals/news and stellar quantitative metrics strongly supports a BUY signal.
+
+3.  **Determine Signal and Confidence:**
+    *   *Signal:* BUY. The metrics are overwhelmingly positive.
+    *   *Confidence:* High. The Sharpe ratio is excellent, returns are doubled, drawdown is contained, and sentiment is bullish. I'll assign 92. (90+ reflects the strength of both qualitative and quantitative data).
+
+4.  **Draft the Reason:**
+    *   *Draft 1:* The exceptional risk-adjusted returns and low drawdown profile, combined with bullish institutional inclusion and AI growth, strongly validate a buy signal.
+    *   *Refinement (One sentence, professional):* The exceptional risk-adjusted returns and controlled drawdown profile, reinforced by bullish institutional inclusion and strong AI/cloud fundamentals, strongly validate a buy signal.
+    *   *Check constraints:* One sentence? Yes. Professional tone? Yes. Covers data? Yes.
+
+5.  **Final Output Formatting:**
+    *   Must match exactly:
+        Signal: BUY
+        Confidence: 92
+        Reason: The exceptional risk-adjusted returns and controlled drawdown profile, reinforced by bullish institutional inclusion and strong AI/cloud fundamentals, strongly validate a buy signal.
+
+6.  **Final Review:**
+    *   Signal: BUY? Yes.
+    *   Confidence: 92? Yes.
+    *   Reason: One sentence? Yes.
+    *   Format: Exact match? Yes.
+    *   No extra text? Yes.
+
+    Proceed. 
+    Output Generation. 
+    [Output]
+    Signal: BUY
+    Confidence: 92
+    Reason: The exceptional risk-adjusted returns and controlled drawdown profile, reinforced by bullish institutional inclusion and strong AI/cloud fundamentals, strongly validate a buy signal.
+</think>
+
+Signal: BUY
+Confidence: 92
+Reason: The exceptional risk-adjusted returns and controlled drawdown profile, reinforced by bullish institutional inclusion and strong AI/cloud fundamentals, strongly validate a buy signal."
+META,"
+<think>
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Persona:** Professional simulated trading analyst.
+    *   **Task:** Analyze data for META and generate a trading signal.
+    *   **Input Data:**
+        *   *News Sentiment:* Bullish (implied by previous turn or general context, though the prompt actually pastes the *output* of the previous turn as context? Wait, looking at the prompt structure: The user provided ""News Sentiment Analysis: [Model Output from previous turn] Backtest Performance: ... Based on this data provide: ..."". Actually, the prompt *is* the full request. The user pasted the sentiment analysis output *inside* the prompt as context, or the user is simulating a multi-turn interaction where the previous turn was the sentiment analysis. Let's look closely at the prompt text:
+        `News Sentiment Analysis: Sentiment: BULLISH Confidence: 85 Reason: ... Backtest Performance: ... Based on this data provide: ...`
+        Okay, the input data consists of:
+        *   Sentiment: BULLISH
+        *   Confidence: 85
+        *   Reason: Investors reacting positively to AI/cloud pivot, stock gains, price targets, despite capex caution.
+        *   Backtest Performance: Total Return: -21.40%, Sharpe Ratio: -0.60, Max Drawdown: -42.26%.
+    *   **Output Requirements:**
+        1.  Signal: BUY, SELL, or HOLD
+        2.  Confidence: 0-100
+        3.  Reason: one sentence
+        4.  Exact format required.
+
+2.  **Evaluate the Data:**
+    *   *Sentiment:* Strongly Bullish (85 confidence). Drivers: Cloud business, AI monetization, budget cuts in Reality Labs, price targets to $800+, recent stock pops.
+    *   *Backtest Performance:* Very Poor. Total Return: -21.40% (Negative). Sharpe: -0.60 (Negative risk-adjusted return). Max Drawdown: -42.26% (High risk/volatility).
+    *   *Conflict Resolution:* The sentiment is bullish, but the backtest shows a losing strategy with poor risk metrics. A professional analyst would weigh the structural backtest failure heavily. Even with bullish news, a strategy that has returned -21.4% with a negative Sharpe and massive drawdown suggests the current trading model or market regime is unfavorable for entry.
+    *   *Decision:* SELL or HOLD? Given the negative backtest return and high drawdown, entering a position is risky. If holding, the backtest suggests cutting losses or avoiding. Usually, negative backtest + high drawdown = SELL (or avoid/short). However, if the sentiment is *currently* driving the stock up, maybe the backtest is lagging? But the prompt asks for a signal *based on this data*. The data shows a failing strategy. A professional analyst would likely recommend SELL (to exit/avoid) or HOLD (if already in, but backtest says it's bad). Given ""Total Return -21.40%"", a SELL signal is the most logical deduction to preserve capital, overriding the bullish sentiment which might be pricing in already or facing execution risk. Alternatively, the backtest might represent the *asset's* performance, not the strategy's. If META itself is down 21.4% with high drawdown, but sentiment is bullish, it might be a BUY (contrarian/value)?
+    *   *Re-reading carefully:* ""Backtest Performance"" usually refers to the *trading strategy's* historical performance on the asset, or the asset's recent performance. If it's the asset's performance: META is down 21.4%, but news says ""shares are rising today"", ""pops 6%"", ""spikes 10%"". This implies a rebound is happening. The backtest might be trailing data.
+    *   *Standard Quant/Analyst Logic:* Sentiment is Bullish (85). Backtest is Negative (-21.4% return, -0.6 Sharpe). The negative backtest indicates high risk and poor recent momentum/strategy efficacy. A professional trader would likely SELL (take profits if in, or short/avoid) due to the poor risk metrics, OR HOLD if waiting for confirmation. However, with a Sharpe of -0.6 and -21% return, the risk/reward is poor. I will lean towards SELL due to the negative backtest metrics overriding the sentiment, or HOLD if interpreting it as ""wait for confirmation"". Let's go with SELL to reflect the negative backtest performance and high drawdown risk, or HOLD if the sentiment is strong enough to suggest a reversal. Actually, given the strong bullish news (""spikes 10%"", ""$800+ forecast""), a SELL might be too aggressive if the trend is reversing. But the backtest says -21.4% return. If this is a *strategy* backtest, the strategy is failing -> SELL/EXIT. If it's *stock* performance, it's down but news is bullish -> BUY?
+    *   *Let's assume ""Backtest Performance"" refers to the proposed trading model/strategy.* A strategy with -21.4% return and -0.6 Sharpe should not be deployed. Signal: SELL (or DO NOT TRADE, but options are BUY/SELL/HOLD). SELL is appropriate to exit or avoid.
+    *   *Alternative interpretation:* The user wants a signal for META based on Sentiment vs Backtest. Sentiment says Up. Backtest says Down/Risky. Professional judgment: The backtest shows the strategy/model is currently losing money and has high drawdown. I will issue a SELL signal to preserve capital, citing the poor risk-adjusted returns and drawdown outweighing the bullish news flow.
+    *   *Refinement:* Actually, often in these prompts, ""Backtest Performance"" refers to the asset's recent performance. If META is down 21.4% but sentiment is bullish with catalysts (cloud, AI monetization), a professional might see this as a BUY opportunity (catching the reversal). However, Sharpe -0.6 and Max DD -42% is terrible. I'll stick with SELL due to the negative risk metrics, or HOLD. Let's look at the ""Reason"" constraint. One sentence.
+    *   *Decision:* SELL. Reason: The significantly negative backtest returns and poor risk-adjusted metrics outweigh the bullish sentiment, indicating unfavorable risk-reward conditions that warrant capital preservation.
+    *   *Wait, let's reconsider HOLD.* If sentiment is 85% bullish, but backtest is bad, maybe the market is inefficient? No, quant analysts trust backtests. SELL is safer.
+    *   *Let's try a balanced professional approach:* Signal: SELL. Confidence: 75. Reason: The strategy's negative total return and poor risk-adjusted metrics outweigh the bullish sentiment, suggesting unfavorable risk-reward conditions that warrant exiting or avoiding the position.
+    *   *Check constraints:* Exact format. One sentence reason. 0-100 confidence. BUY/SELL/HOLD.
+    *   *Final Polish:* Signal: SELL. Confidence: 75. Reason: The negative backtest returns and poor risk-adjusted metrics outweigh the bullish sentiment, indicating unfavorable risk-reward conditions that warrant capital preservation. (Fits perfectly).
+    *   *Self-Correction/Verification during thought:* Could it be BUY? If the backtest is just historical and the news is *new* catalysts, sometimes analysts say BUY. But the prompt says ""Based on *this* data"". The data explicitly shows -21.4% return. A professional would not ignore that. SELL is the most defensible professional signal given the negative performance metrics. I will proceed with SELL. Confidence 70-75. Reason focuses on risk metrics overriding sentiment.
+    *   *Output Generation matches format.*
+</think>
+
+Signal: SELL
+Confidence: 75
+Reason: The negative backtest returns and poor risk-adjusted metrics outweigh the bullish sentiment, indicating unfavorable risk-reward conditions that warrant capital preservation."
+NVDA,"
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Professional simulated trading analyst
+   - **Task:** Analyze provided data for NVDA and generate a trading signal
+   - **Input Data:**
+     - Sentiment: BULLISH
+     - Confidence: 90
+     - Reason: Despite recent near-term underperformance, overwhelming analyst conviction, exceptional revenue growth, and expanding AI demand position NVDA as a compelling long-term investment opportunity.
+     - Backtest Performance:
+       - Total Return: 23.41%
+       - Sharpe Ratio: 0.66
+       - Max Drawdown: -19.44%
+   - **Output Requirements:**
+     1. Signal: BUY, SELL, or HOLD
+     2. Confidence: 0-100
+     3. Reason: one sentence
+     - Format: Exact match required:
+       Signal: <BUY/SELL/HOLD>
+       Confidence: <0-100>
+       Reason: <one sentence>
+
+2.  **Evaluate Data for Signal Generation:**
+   - *Sentiment/Reason:* Strongly bullish fundamentals, high analyst conviction, AI growth, framing underperformance as opportunity.
+   - *Backtest Metrics:*
+     - Total Return: 23.41% (Positive, decent)
+     - Sharpe Ratio: 0.66 (Moderate/Good risk-adjusted return, >0.5 is generally acceptable, >1 is excellent)
+     - Max Drawdown: -19.44% (Moderate volatility/risk, typical for growth/tech stocks)
+   - *Synthesis:* The combination of strong bullish sentiment/fundamentals and a backtest showing positive returns with acceptable risk-adjusted metrics supports a BUY signal. The confidence should reflect both the strong sentiment (90) and the moderate backtest performance (Sharpe 0.66, DD -19.44%), so I'll adjust slightly to reflect a balanced but firm stance, perhaps 85-88. I'll stick with 88 to align with the strong sentiment while acknowledging the backtest volatility. Actually, keeping it at 85 or 88 is fine. I'll go with 85 to be precise and professional.
+   - *Reason Construction:* Needs to be one sentence, combining the bullish sentiment, backtest results, and the trading decision.
+   - Draft Reason: The strong bullish sentiment and positive backtest returns outweigh the moderate drawdown risk, justifying a long position to capture continued AI-driven growth.
+   - Check constraints: One sentence? Yes. Matches format? Yes.
+
+3.  **Format Output:**
+   Signal: BUY
+   Confidence: 85
+   Reason: The strong bullish sentiment and positive backtest returns outweigh the moderate drawdown risk, justifying a long position to capture continued AI-driven growth.
+
+   Double-check against exact format requirement:
+   Signal: <BUY/SELL/HOLD>
+   Confidence: <0-100>
+   Reason: <one sentence>
+
+   All constraints met. Output matches exactly. No extra text. Proceed. 
+   Self-Correction/Refinement during thought: 
+   I should ensure the reason directly references the provided data points (sentiment, backtest metrics) concisely. 
+   ""The strong bullish sentiment and positive backtest returns outweigh the moderate drawdown risk, justifying a long position to capture continued AI-driven growth."" -> This is good. 
+   Confidence: 85 is reasonable. 
+   Format matches exactly. 
+   Ready.✅
+   Output Generation. 
+   [Proceeds]
+</think>
+
+Signal: BUY
+Confidence: 85
+Reason: The strong bullish sentiment and positive backtest returns outweigh the moderate drawdown risk, justifying a long position to capture continued AI-driven growth."

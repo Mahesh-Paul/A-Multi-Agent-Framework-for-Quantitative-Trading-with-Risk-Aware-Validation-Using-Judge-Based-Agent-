@@ -1,5 +1,4 @@
 node_modules/
-*.csv
 __pycache__/
 .env
 .venv/

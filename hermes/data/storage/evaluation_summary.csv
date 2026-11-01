@@ -1,0 +1,6 @@
+ticker,signal,actual_movement,average_score,verdict
+AAPL,BUY,UP 2.35% (from $302.25 to $309.35),9.5,PASS
+MSFT,BUY,DOWN 1.68% (from $491.50 to $483.24),2.0,FAIL
+GOOGL,BUY,UP 0.37% (from $343.54 to $344.82),0.0,FAIL
+META,BUY,DOWN 5.00% (from $578.85 to $549.90),0.0,FAIL
+NVDA,BUY,DOWN 4.18% (from $224.09 to $214.72),2.0,FAIL
