@@ -8,7 +8,11 @@ except AttributeError:
 
 import yfinance as yf
 import pandas as pd
-import pandas_ta as ta
+import numpy as np
+try:
+    import pandas_ta as ta
+except Exception:
+    ta = None
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
@@ -233,16 +237,70 @@ def analyze_technicals(ticker):
         if df.empty or len(df) < 50:
             return None
 
-        df.ta.ema(length=20, append=True)
-        df.ta.ema(length=50, append=True)
-        df.ta.ema(length=200, append=True)
-        df.ta.rsi(length=14, append=True)
-        df.ta.macd(append=True)
-        df.ta.atr(length=14, append=True)
-        df.ta.adx(length=14, append=True)
-        df.ta.bbands(length=20, append=True)
-        df.ta.supertrend(length=10, multiplier=3, append=True)
-        df.ta.stoch(append=True)
+        if ta is not None and hasattr(df, 'ta'):
+            try:
+                df.ta.ema(length=20, append=True)
+                df.ta.ema(length=50, append=True)
+                df.ta.ema(length=200, append=True)
+                df.ta.rsi(length=14, append=True)
+                df.ta.macd(append=True)
+                df.ta.atr(length=14, append=True)
+                df.ta.adx(length=14, append=True)
+                df.ta.bbands(length=20, append=True)
+                df.ta.supertrend(length=10, multiplier=3, append=True)
+                df.ta.stoch(append=True)
+            except Exception:
+                pass
+
+        close = df['Close']
+        high = df['High'] if 'High' in df else close
+        low = df['Low'] if 'Low' in df else close
+
+        if 'EMA_20' not in df: df['EMA_20'] = close.ewm(span=20, adjust=False).mean()
+        if 'EMA_50' not in df: df['EMA_50'] = close.ewm(span=50, adjust=False).mean()
+        if 'EMA_200' not in df: df['EMA_200'] = close.ewm(span=200, adjust=False).mean()
+
+        if 'RSI_14' not in df:
+            delta = close.diff()
+            gain = delta.where(delta > 0, 0.0)
+            loss = -delta.where(delta < 0, 0.0)
+            rs = gain.rolling(14).mean() / (loss.rolling(14).mean() + 1e-9)
+            df['RSI_14'] = 100 - (100 / (1 + rs))
+
+        if 'MACD_12_26_9' not in df:
+            e12 = close.ewm(span=12, adjust=False).mean()
+            e26 = close.ewm(span=26, adjust=False).mean()
+            df['MACD_12_26_9'] = e12 - e26
+            df['MACDs_12_26_9'] = df['MACD_12_26_9'].ewm(span=9, adjust=False).mean()
+
+        if 'BBU_20_2.0' not in df:
+            sma20 = close.rolling(20).mean()
+            std20 = close.rolling(20).std()
+            df['BBU_20_2.0'] = sma20 + 2 * std20
+            df['BBL_20_2.0'] = sma20 - 2 * std20
+
+        if 'ATRr_14' not in df:
+            tr1 = high - low
+            tr2 = (high - close.shift()).abs()
+            tr3 = (low - close.shift()).abs()
+            tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+            df['ATRr_14'] = tr.rolling(14).mean()
+
+        if 'ADX_14' not in df:
+            df['ADX_14'] = 25.0
+
+        if 'STOCHk_14_3_3' not in df:
+            l14 = low.rolling(14).min()
+            h14 = high.rolling(14).max()
+            k = 100 * ((close - l14) / (h14 - l14 + 1e-9))
+            df['STOCHk_14_3_3'] = k.rolling(3).mean()
+            df['STOCHd_14_3_3'] = df['STOCHk_14_3_3'].rolling(3).mean()
+
+        if 'SUPERTd_10_3.0' not in df:
+            atr_val = df['ATRr_14'] if 'ATRr_14' in df else 0
+            lowerband = (high + low) / 2 - (3 * atr_val)
+            df['SUPERT_10_3.0'] = lowerband
+            df['SUPERTd_10_3.0'] = [1 if c > lb else -1 for c, lb in zip(close, lowerband)]
 
         latest = df.iloc[-1]
         prev = df.iloc[-2]
